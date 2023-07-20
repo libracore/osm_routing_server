@@ -5,6 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
+WorkingDirectory=/home/libracore/osm_routing_server
 ExecStart=/usr/bin/python3 /home/libracore/osm_routing_server/routing_server.py
 
 [Install]
