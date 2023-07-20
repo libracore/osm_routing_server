@@ -1,0 +1,11 @@
+[Unit]
+Description=OSM routing server
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/libracore/osm_routing_server/routing_server.py
+
+[Install]
+WantedBy=multi-user.target
